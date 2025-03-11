@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 
 @Controller
 public class UsersController {
-	@GetMapping("/register")
+	@postMapping("/register")
 	public String addUsers(@ModelAttribute Users user)
 	{
 		System.out.println(user.getUsername()+""
