@@ -103,5 +103,13 @@
         <textarea name="address"></textarea>
     </div>
     <input type="submit" value="Register"/>
+</form>
+    <div class="success-message" id="successMessage">Registration Successful!</div>
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit".function(event){
+                                                                     event.preventDefault();
+            document.getElementById("successMessage").style.display="block";
+        });
+    </script>
 </body>
 </html>
