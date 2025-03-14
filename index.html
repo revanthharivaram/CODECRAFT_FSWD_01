@@ -119,12 +119,8 @@
 
     <script>
         document.getElementById("registrationForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent actual form submission
-            
-            // Show the success message
+            event.preventDefault(); 
             document.getElementById("successMessage").style.display = "block";
-
-            // Optional: Reset form fields after submission
             this.reset();
         });
     </script>
